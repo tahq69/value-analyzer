@@ -1,6 +1,11 @@
 # value-analyzer
 
-> A Vue.js project
+> A Vue.js project to draw a chart of bitcoin changes per day 
+ and calculate best moment of purchase and sell moments. 
+
+## Demo
+
+[Demo is available here](https://rawgit.com/tahq69/value-analyzer/dist/index.html)
 
 ## Build Setup
 

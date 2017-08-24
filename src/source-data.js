@@ -1,11 +1,14 @@
-export default function data () {
-  let result = [...new Array(100).keys()]
+export default function data (n, diff = 20) {
+  let result = [...new Array(n).keys()]
   let actual = 400
-  return result.reduce((accumulator, value, index, arr) => {
-    let {min, max} = gerRange(actual)
+  return result.reduce(acc => {
+    let {min, max} = gerRange(actual, diff)
+
     actual = getRandomInt(min, max)
-    accumulator.push(actual)
-    return accumulator
+
+    acc.push(actual)
+
+    return acc
   }, [])
 }
 
@@ -27,7 +30,7 @@ function getRandomInt (min, max) {
  * @param  {number} minValue
  * @returns {{max: number, min: number}}
  */
-function gerRange (curr, diff = 100, maxValue = 800, minValue = 0) {
+function gerRange (curr, diff = 20, maxValue = 800, minValue = 0) {
   let max = curr + diff
   let min = curr - diff
 
@@ -37,7 +40,7 @@ function gerRange (curr, diff = 100, maxValue = 800, minValue = 0) {
   }
 
   if (min < minValue) {
-    max -= minValue - min
+    max += minValue - min
     min = minValue
   }
 
