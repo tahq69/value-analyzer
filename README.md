@@ -5,7 +5,7 @@
 
 ## Demo
 
-[Demo is available here](https://rawgit.com/tahq69/value-analyzer/dist/index.html)
+[Demo is available here](https://rawgit.com/tahq69/value-analyzer/master/dist/index.html)
 
 ## Build Setup
 
