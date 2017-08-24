@@ -96,7 +96,7 @@
 
       drawChart () {
         this.context.beginPath()
-        this.context.moveTo(10, this.records[0])
+        this.context.moveTo(this.xCoord(0), this.yCoord(this.records[0]))
         this.records.map((value, index) => {
           if (index === 0) {
             return
