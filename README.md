@@ -7,6 +7,10 @@
 
 [Demo is available here](https://rawgit.com/tahq69/value-analyzer/master/dist/index.html)
 
+## Book
+
+Page 21 (from pdf) last chapter.
+
 ## Build Setup
 
 ``` bash
